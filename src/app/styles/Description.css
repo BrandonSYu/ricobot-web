@@ -1,0 +1,109 @@
+.banner-description {
+  color: white;
+  text-align: left;
+  z-index: 30;
+  position: relative;
+  width: 100%;  
+  display: block;
+  unicode-bidi: isolate;
+  --tw-text-opacity: 1;
+  text-size-adjust: 100%;
+  font-feature-settings: "normal";
+  font-variation-settings: "normal";
+  text-transform: "uppercase";
+  tab-size: 4px;
+  margin-bottom: 40px;
+}
+
+.banner-description .more-from,
+.banner-description .main-title,
+.banner-description .cta {
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.banner-description .more-from {
+  font-size: 17px;
+  margin-bottom: 64px;
+  max-width: 35%;
+}
+
+.banner-description .main-title {
+  font-size: 49px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.banner-description .rounded-accent {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 35px;
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-description .cta {
+  background-color: #ffff;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.banner-description p {
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 75%;
+  line-height: 21px;
+}
+
+@media(min-width :1024px){
+  .banner-description .more-from {
+    font-size: 31px;
+    margin-bottom: 40px;
+    max-width: 15%;
+  }
+  
+  .banner-description .main-title {
+    font-size: 49px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .banner-description p {
+    font-size: 16px;
+    max-width: 50%;
+    margin-top: 25px;
+    max-width: 45%;
+    line-height: 24px;
+  }
+  
+  .banner-description .rounded-accent {
+    font-weight: 800;
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid white;
+    height: 40px;
+    border-radius: 25px;
+    padding: 5px 15px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-description .cta {
+    font-size: 16px;
+  }
+  
+}
+

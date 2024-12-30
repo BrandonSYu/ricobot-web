@@ -1,0 +1,32 @@
+.main-banner {
+  background: linear-gradient(180deg, #000000, #000000 100%);
+  margin-right: 0;
+  margin-top: 125px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main-banner .banner-content {
+  color: white;
+  text-align: left;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-right: 96px;
+  padding-left: 30px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+  .main-banner {
+    margin-bottom: 150px;
+  }
+  .main-banner .banner-content {
+    margin-left: 65px;
+    padding-left: 32px;
+    padding-top: 75px;
+    margin-top: 0;
+  }
+}

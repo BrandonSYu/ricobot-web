@@ -1,0 +1,117 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 20;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.slider .thumbnail {
+  width: 100%; 
+  height: 100%; 
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.thumbnail-container-inner{
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .thumbnail-container-inner.active {
+  background: black;
+  padding: 4px;
+  border-radius: 10px; 
+  box-sizing: border-box;
+}
+
+.thumbnail-container-outer.active{
+  background: radial-gradient(
+    circle at top right, 
+    rgba(255, 255, 255, 0.8), 
+    rgba(255, 255, 255, 0) 70%
+  ),
+  radial-gradient(
+    circle at bottom left, 
+    rgba(255, 255, 255, 0.8), 
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-blend-mode: lighten;
+  padding: 3px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+@media(max-width: 768){
+
+  .thumbnail-container-outer{
+    flex: 1 1 calc(33.33% - 10px);
+    box-sizing: border-box; 
+    margin: -3px;
+   }
+   
+   .thumbnail-container-outer.active{
+    flex: 1 1 calc(33.33% - 10px);
+    margin: -3px; 
+  }
+
+}
+
+@media(min-width: 1024px) {
+
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    tab-size: 4px;
+    line-height: 24px;
+    max-width: 1200px;
+    z-index: 20;
+    margin-bottom: 75px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .slider .thumbnail {
+    width: 124px;
+    height: 124px;
+    cursor: pointer;
+    display: block;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .thumbnail-container-outer{
+    flex: none;
+    box-sizing: border-box; 
+    margin: 0px;
+   }
+  
+  .thumbnail-container-outer.active{
+    display: inline-block;
+  }
+
+  .thumbnail.active {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    z-index: 1;
+    background-clip: padding-box;
+  }
+
+}
