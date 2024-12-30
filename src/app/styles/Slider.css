@@ -98,7 +98,6 @@
   }
 
   .slider .thumbnail-container-outer{
-    flex: none;
     box-sizing: border-box; 
     margin: 0px;
    }
