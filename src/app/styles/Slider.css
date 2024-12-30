@@ -9,12 +9,12 @@
 }
 
 .slider .thumbnail {
-  width: 90px;
-  height: 90px;
   display: block;
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 4px;
+  width: 100%;
+  height: auto;
 }
 
 .slider .thumbnail-container-inner{
@@ -52,6 +52,7 @@
 @media(max-width: 768){
 
   .slider .thumbnail-container-outer{
+    flex: 1 1 calc(33.33% - 20px);
     box-sizing: border-box; 
     margin: -3px;
    }
