@@ -59,7 +59,14 @@
    .slider .thumbnail-container-outer.active{
     margin: -3px; 
   }
-
+  .slider .thumbnail.active {
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    z-index: 1;
+    background-clip: padding-box;
+  }
 }
 
 @media(min-width: 1024px) {
