@@ -1,9 +1,9 @@
-Take home assignment for Ricobot banner component built with React Typescript using NextJS
+# Take home assignment for Ricobot banner component built with React Typescript using NextJS
 
-Built application conforming to given documentation as well as design and responsiveness for mobile and desktop/laptop of provided webpage.
+## Built application conforming to given documentation as well as design and responsiveness for mobile and desktop/laptop of provided webpage.
 (https://take-home-ricobot.vercel.app/)
 
-Added additional functionality for automatically switching to the proceeding thumbnail on a 5 second interval with user selection resetting this interval.
+## Added additional functionality for automatically switching to the proceeding thumbnail on a 5 second interval with user selection resetting this interval.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
