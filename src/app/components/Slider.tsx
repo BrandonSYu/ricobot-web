@@ -17,7 +17,7 @@ const Slider = ({ thumbnailImages, currentIndex, handleSelectImage }: SliderProp
           key={'outer' + index}
           className={`thumbnail-container-outer ${currentIndex === index ? "active" : ""}`}
         >
-          <div className={`thumbnail-container-inner ${currentIndex === index ? "active" : ""}`}>
+          <div key={'inner' + index} className={`thumbnail-container-inner ${currentIndex === index ? "active" : ""}`}>
             <Image
               className={`thumbnail ${currentIndex === index ? "active" : ""}`}
               src={thumbnail}
